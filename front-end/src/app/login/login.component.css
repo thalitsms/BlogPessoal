@@ -1,0 +1,26 @@
+#img-bg
+{
+margin-top: 150px;
+margin-bottom: 280px;
+}
+
+.bg-img{
+  background-color: #595140;
+}
+.bg-button{
+  background-color: #455A64;
+  border-color: #455A64;
+  color: white;
+}
+
+.bg-button:hover{
+  background-color: #F2DFA7;
+  border-color: #F2DFA7;
+  color: #595140;
+
+}
+
+a{
+  color: #bd8d25;
+}
+

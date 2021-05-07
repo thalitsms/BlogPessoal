@@ -1,0 +1,37 @@
+.bg-home{
+  background-color: #592F33;
+}
+
+.text-color{
+  color: #595140;
+}
+
+.text-color2{
+  color: #455A64;
+}
+
+.bg-button{
+  background-color: #455A64;
+  border-color: #455A64;
+  color: white;
+}
+
+.bg-button:hover{
+  background-color: #F2DFA7;
+  border-color: #F2DFA7;
+  color: #595140;
+
+}
+
+.bg-buttonc{
+  background-color: #592F33;
+  border-color: #592F33;
+
+  color: white;
+}
+
+.bg-buttonc:hover{
+  background-color: #F2DFA7;
+  border-color: #F2DFA7;
+  color: #595140;
+}

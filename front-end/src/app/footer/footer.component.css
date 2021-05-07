@@ -1,0 +1,29 @@
+ul.social-network{
+  list-style: none;
+  padding: 0;
+}
+
+ul.social-network li{
+  display: inline;
+  margin: 0;
+  padding: 5px;
+}
+.bg-menu-color
+{
+  background-color: #595140;
+}
+
+.fa-codepen, .fa-linkedin-in, .fa-github-alt {
+  font-size: 35pt;
+  color: #fff;
+  padding: 10px;
+}
+
+.fa-codepen:hover, .fa-linkedin-in:hover, .fa-github-alt:hover{
+  color: rgba(99, 30, 84, 0.575);
+}
+
+.bg-copyright{
+  background-color: #A6866A;
+  color: #595140;
+}

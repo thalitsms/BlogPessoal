@@ -1,0 +1,35 @@
+#img-bg
+{
+margin-top: 100px;
+margin-bottom: 280px;
+}
+
+.bg-img{
+  background-color: #595140;
+  
+}
+.bg-button{
+  background-color: #A67676;
+  border-color: #A67676;
+  color: white;
+}
+
+.bg-buttonc{
+  background-color: #592F33;
+  border-color: #592F33;
+
+  color: white;
+}
+.bg-button:hover{
+  background-color: #A6866A;
+  border-color: #A6866A;
+  color: #fff;
+
+}
+
+.bg-buttonc:hover{
+  background-color: #F2DFA7;
+  border-color: #F2DFA7;
+  color: #595140;
+}
+

@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+html{
+  scroll-behavior: smooth;
+}
+
+.fs-54{
+  font-size: 44px;
+}
+
+.fs-18{
+  font-size: 18px;
+}
+
+.text-color{
+  color: #595140;
+}
+
+.bg-home{
+  background-color: #592F33;
+}
+
+

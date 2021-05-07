@@ -1,0 +1,16 @@
+.fs-16
+
+{
+  font-size: 16pt;
+}
+
+.bg-menu-color
+{
+  background-color: #592F33;
+}
+
+a{
+  cursor: pointer;
+  text-decoration:none;
+}
+
