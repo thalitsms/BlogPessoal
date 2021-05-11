@@ -51,8 +51,10 @@
             <th>{{item.id}}</th>
             <td>{{item.descricao}}</td>
             <td class="d-flex justify-content-end">
-              <button class="btn btn-info mr-2 bg-button" data-toggle="modal" data-target="#ModalEdit">Editar</button>
-              <button class="btn btn-danger mr-2 bg-buttonc" data-toggle="modal" data-target="#ModalDelete">Deletar</button>
+              <button class="btn btn-info mr-2 bg-button" data-toggle="modal" data-target="#ModalEdit"
+                (click)="this.tema = item">Editar</button>
+              <button class="btn btn-danger mr-2 bg-buttonc" data-toggle="modal" data-target="#ModalDelete"
+                (click)="this.tema = item">Deletar</button>
             </td>
           </tr>
         </tbody>
@@ -65,9 +67,9 @@
 
 </div>
 
-<!--MODAL CANCELAR-->
+<!--MODAL DELETAR-->
 
-<div class="modal fade" id="ModalDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="ModalDelete" tabindex="-1" role="dialog" aria-labelledby="ModalDelete" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -77,8 +79,8 @@
         </button>
       </div>
       <div class="modal-body">
-        <h4 class="text-center">O conteúdo será excluído permanentemente. Tem certeza que deseja prosseguir?</h4>
-        <p class="text-center">Tema selecionado: {{tema.descricao}} {{tema.id}}</p>
+        <p class="text-center">O conteúdo será excluído permanentemente. Tem certeza que deseja prosseguir?</p>
+        <p class="text-center">Tema selecionado: {{this.tema.descricao}}</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
@@ -86,12 +88,13 @@
       </div>
     </div>
   </div>
+</div>
 
 
 
 <!--MODAL EDITAR-->
 
-<div class="modal fade" id="ModalEdit" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="ModalEdit" tabindex="-1" role="dialog" aria-labelledby="ModalEdit" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -101,14 +104,12 @@
         </button>
       </div>
       <div class="modal-body">
-        <form>
-          <div class="form-group">
+        <div class="form-group">
 
-            <label for="message-text" class="col-form-label">Novo Tema:</label>
-            <textarea class="form-control" id="message-text" [(ngModel)]="tema.descricao"></textarea>
+          <label for="message-text" class="col-form-label">Novo Tema:</label>
+          <input class="form-control" id="input-descricao" [(ngModel)]="tema.descricao">
 
-          </div>
-        </form>
+        </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
