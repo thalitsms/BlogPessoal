@@ -50,14 +50,22 @@ export class HomeComponent implements OnInit {
       this.listaTemas = resp
     })
   }
+
   findByIdTema(){
     this.temaService.getByIdTema(this.idTema).subscribe((resp: Tema)=>{
-      this.tema =resp
+      this.tema = resp
     })
   }
+
   getAllPostagens(){
     this.postagemService.getAllPostagens().subscribe((resp: Postagem[])=>{
       this.listaPostagens = resp
+    })
+  }
+
+  findByIdUser(){
+    this.authService.getByIdUser(this.idUser).subscribe((resp: User) => {
+      this.user = resp
     })
   }
 
@@ -66,20 +74,18 @@ export class HomeComponent implements OnInit {
     this.postagem.tema = this.tema
 
     this.user.id = this.idUser
-    this.postagem.usuario =this.user
+    this.postagem.usuario = this.user
 
-  this.postagemService.postPostagem(this.postagem).subscribe((resp: Postagem)=>{
-     this.postagem = resp
-    alert('Postagem realizada com sucesso!')
-    this.postagem = new Postagem()
-    this.getAllPostagens()
-   })
+    this.postagemService.postPostagem(this.postagem).subscribe((resp: Postagem) => {
 
+      this.postagem = resp
+      alert('Postagem realizada com sucesso!')
+      this.postagem = new Postagem()
+      this.getAllPostagens()
+
+    })
   }
-
-
-
-  }
+}
 
 
 
