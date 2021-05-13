@@ -50,6 +50,7 @@ export class TemaComponent implements OnInit {
     this.temaService.postTema(this.tema).subscribe((resp: Tema) => {
       alert('Tema cadastrado com sucesso!')
       this.findAllTemas()
+      this.tema = new Tema()
     })
   }
 
@@ -57,6 +58,7 @@ export class TemaComponent implements OnInit {
     this.temaService.deleteTema(this.tema.id).subscribe(() => {
       alert("Tema apagado com sucesso!")
       this.findAllTemas()
+      this.tema = new Tema()
     })
   }
 
@@ -64,6 +66,7 @@ export class TemaComponent implements OnInit {
     this.temaService.putTema(this.tema).subscribe((resp: Tema) =>{
       alert("Tema atualizado com sucesso!")
       this.findAllTemas()
+      this.tema = new Tema()
     })
   }
 

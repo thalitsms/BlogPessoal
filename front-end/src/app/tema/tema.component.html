@@ -51,9 +51,9 @@
             <th>{{item.id}}</th>
             <td>{{item.descricao}}</td>
             <td class="d-flex justify-content-end">
-              <button class="btn btn-info mr-2 bg-button" data-toggle="modal" data-target="#ModalEdit"
+              <button class="btn btn-info mr-2 bg-button" data-toggle="modal" data-target="#ModalEdit" data-dismiss="modal"
                 (click)="this.tema = item">Editar</button>
-              <button class="btn btn-danger mr-2 bg-buttonc" data-toggle="modal" data-target="#ModalDelete"
+              <button class="btn btn-danger mr-2 bg-buttonc" data-toggle="modal" data-target="#ModalDelete" data-dismiss="modal"
                 (click)="this.tema = item">Deletar</button>
             </td>
           </tr>

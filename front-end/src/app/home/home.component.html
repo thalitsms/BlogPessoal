@@ -74,14 +74,14 @@
         <div class="form-group">
           <label for="texto">Escolha um tema ou <a data-dismiss="modal" class="text-color2" routerLink="/tema">cadastre um novo</a>:</label>
           <select class="form-control" name="tema" id="tema">
-            <option value="">Temas</option>
+            <option *ngFor='let item of listaTemas' value="{{item.id}}">{{item.descricao}}</option>
           </select>
         </div>
 
       </div>
       <div class="modal-footer">
         <button type="button" class="btn bg-buttonc" data-dismiss="modal">Cancelar</button>
-        <button type="button" class="btn  bg-button">Publicar</button>
+        <button type="button" class="btn  bg-button" (onclick)="publicar()">Publicar</button>
       </div>
     </div>
   </div>
