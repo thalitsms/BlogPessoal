@@ -38,7 +38,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     if(environment.token == ''){
-      this.router.navigate(['/entrar'])
+      this.router.navigate(['/login'])
     }
     this.getAllTema()
     this.getAllPostagens()
