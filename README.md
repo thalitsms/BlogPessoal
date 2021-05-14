@@ -1,7 +1,7 @@
 # BlogPessoal
 ---
 
-Meu primeiro projeto Java | Spring MVC | JPA | HIBERNATE | JSP em andamento 👩‍💻 🚀 🚀
+Java | Spring MVC | JPA | HIBERNATE | JSP | ANGULAR | TS 💻 
 
 ---
 
