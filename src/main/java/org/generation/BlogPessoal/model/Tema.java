@@ -7,7 +7,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 @Table(name = "tb_tema")
-public class Tema {
+public class Tema implements EntidadeBasica{
 
 	@Id	
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
